@@ -66,12 +66,13 @@
             this.colDelete});
             this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProduct.Location = new System.Drawing.Point(0, 0);
+            this.dgvProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.ReadOnly = true;
             this.dgvProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvProduct.RowHeadersWidth = 51;
             this.dgvProduct.RowTemplate.Height = 29;
-            this.dgvProduct.Size = new System.Drawing.Size(987, 479);
+            this.dgvProduct.Size = new System.Drawing.Size(864, 359);
             this.dgvProduct.TabIndex = 3;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             // 
@@ -159,13 +160,14 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.LightCoral;
             this.panel1.Controls.Add(this.addBtn);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 479);
+            this.panel1.Location = new System.Drawing.Point(0, 359);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(987, 60);
+            this.panel1.Size = new System.Drawing.Size(864, 45);
             this.panel1.TabIndex = 2;
             // 
             // addBtn
@@ -174,9 +176,10 @@
             this.addBtn.FlatAppearance.BorderSize = 0;
             this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBtn.Image = global::InventoryManagementSystem.Properties.Resources.add;
-            this.addBtn.Location = new System.Drawing.Point(917, 0);
+            this.addBtn.Location = new System.Drawing.Point(803, 0);
+            this.addBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(70, 60);
+            this.addBtn.Size = new System.Drawing.Size(61, 45);
             this.addBtn.TabIndex = 1;
             this.addBtn.UseVisualStyleBackColor = true;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
@@ -186,19 +189,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 19);
+            this.label1.Location = new System.Drawing.Point(21, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 25);
+            this.label1.Size = new System.Drawing.Size(124, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Products";
             // 
             // Products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 539);
+            this.ClientSize = new System.Drawing.Size(864, 404);
             this.Controls.Add(this.dgvProduct);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Products";
             this.Text = "Products";
             this.Load += new System.EventHandler(this.Products_Load);
