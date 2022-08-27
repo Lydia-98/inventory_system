@@ -68,7 +68,7 @@
             this.btnUsers.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsers.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnUsers.ForeColor = System.Drawing.Color.Black;
             this.btnUsers.Image = global::InventoryManagementSystem.Properties.Resources.group;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsers.Location = new System.Drawing.Point(0, 424);

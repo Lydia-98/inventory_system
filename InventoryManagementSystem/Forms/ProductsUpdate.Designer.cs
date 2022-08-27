@@ -185,9 +185,9 @@
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.Location = new System.Drawing.Point(109, 391);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(36, 23);
+            this.lblError.Size = new System.Drawing.Size(39, 23);
             this.lblError.TabIndex = 39;
-            this.lblError.Text = "Error";
+            this.lblError.Text = "Retry";
             this.lblError.UseCompatibleTextRendering = true;
             this.lblError.Visible = false;
             // 
@@ -196,7 +196,7 @@
             this.btnClear.BackColor = System.Drawing.Color.Maroon;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Location = new System.Drawing.Point(333, 434);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClear.Name = "btnClear";
@@ -210,7 +210,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.Aqua;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnUpdate.Location = new System.Drawing.Point(467, 434);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
