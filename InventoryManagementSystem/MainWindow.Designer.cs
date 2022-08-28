@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -41,9 +42,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -69,7 +74,6 @@
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.ForeColor = System.Drawing.Color.Black;
-            this.btnUsers.Image = global::InventoryManagementSystem.Properties.Resources.group;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsers.Location = new System.Drawing.Point(0, 424);
             this.btnUsers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -108,7 +112,6 @@
             this.btnSales.FlatAppearance.BorderSize = 0;
             this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSales.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnSales.Image = global::InventoryManagementSystem.Properties.Resources.sales;
             this.btnSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSales.Location = new System.Drawing.Point(0, 195);
             this.btnSales.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -127,8 +130,6 @@
             this.btnOrder.FlatAppearance.BorderSize = 0;
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrder.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnOrder.Image = global::InventoryManagementSystem.Properties.Resources.order;
-            this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrder.Location = new System.Drawing.Point(0, 150);
             this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOrder.Name = "btnOrder";
@@ -139,6 +140,7 @@
             this.btnOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnCategories
             // 
@@ -146,7 +148,6 @@
             this.btnCategories.FlatAppearance.BorderSize = 0;
             this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategories.ForeColor = System.Drawing.Color.Chartreuse;
-            this.btnCategories.Image = global::InventoryManagementSystem.Properties.Resources.category;
             this.btnCategories.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCategories.Location = new System.Drawing.Point(0, 105);
             this.btnCategories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -167,7 +168,6 @@
             this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProducts.ForeColor = System.Drawing.Color.Yellow;
-            this.btnProducts.Image = global::InventoryManagementSystem.Properties.Resources.product;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducts.Location = new System.Drawing.Point(0, 60);
             this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -208,6 +208,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(192, 0);
@@ -237,6 +239,26 @@
             this.panelMain.Size = new System.Drawing.Size(936, 454);
             this.panelMain.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(104, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(691, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(168, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -254,6 +276,8 @@
             this.panelLogo.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -273,5 +297,7 @@
         private Label lblTitle;
         private Label lblLogo;
         private Panel panelMain;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }

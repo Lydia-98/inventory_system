@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsAdd));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
@@ -47,16 +48,19 @@
             this.comboBoxCategory = new System.Windows.Forms.ComboBox();
             this.textBoxCode = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericRetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericReorder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -70,7 +74,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(40, 17);
+            this.label5.Location = new System.Drawing.Point(195, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(186, 24);
             this.label5.TabIndex = 0;
@@ -270,6 +274,16 @@
             this.label8.TabIndex = 29;
             this.label8.Text = "Product Code: ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // ProductsAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -303,6 +317,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericRetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericReorder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +344,6 @@
         private ComboBox comboBoxCategory;
         private TextBox textBoxCode;
         private Label label8;
+        private PictureBox pictureBox1;
     }
 }
